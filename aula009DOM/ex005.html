@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros Passos com DOM</title>
+    <style>
+        body{
+            background: rgb(102, 1, 102);
+            color:rgb(4, 224, 15);
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar <strong>DOM</strong> em JScript.</p>
+    <div id="click">Clique em mim</div>
+    <script>
+        var p2 = window.document.getElementsByTagName('p')[1];
+        var div = window.document.getElementById('click');
+        p2.style.color = 'yellowgreen'
+        div.style.color = 'yellow'
+
+    </script>
+</body>
+</html>
